@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+	list-style: none;
+}
+button {
+	cursor: pointer;
+}
+body {
+	background-image: url('https://static.pexels.com/photos/23049/pexels-photo-large.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fa {
+	color: rgb(189, 171, 85);
+}
+.board {
+	text-align: center;
+}
+
+.board h1 {
+	text-align: left;
+	padding: 10px;
+}
+.create-column {
+	float: left;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.column-container {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap;
+	justify-content: center;
+}
+
+.column {
+	border-radius: 0 0 15px 15px;
+	margin: 25px;
+	background-color: rgba(215, 206, 194, 0.6);
+	min-width: 250px;
+	min-height: 75px;
+	position: relative;
+}
+
+.column-title {
+	text-align: left;
+	padding-left: 5px;
+	border-bottom: 2px solid rgb(24, 26, 41);
+	background-color: rgba(111, 138, 164, 0.55);
+}
+
+.btn-delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 25px;
+	height: 25px;
+}
+
+.btn-card {
+	margin: 5px;
+	background-color: rgba(24, 26, 41, 0.8);
+	border-style: none;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+}
+
+.column-card-list {
+	height: 60px;
+	margin-bottom: 5px;
+	padding: 5px;	
+	text-align: left;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap;
+	justify-content: center;
+	background-color: white;
+	min-height: 27px;
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid rgb(24, 26, 41);
+}
+
+.btn-delete-card {
+	margin-right: 15px;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-placeholder {
+	border: 1px dashed rgb(24, 26, 41);
+	min-height: 25px;
+	background-color: rgba(111, 138, 164, 0.2);
+}
+
+[class*="btn-"]:hover {
+	transform: scale(1.05,1.07);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+}
